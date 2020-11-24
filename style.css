@@ -1,0 +1,101 @@
+/* body {
+  background-color: rgb(255, 255, 255);
+} */
+
+ol {
+  list-style-type: none;
+  margin: 0 0 1.5em;
+  padding: 30px;
+  counter-reset: item;
+}
+
+ol > li {
+  list-style-type: none;
+  padding: 0 0 0 2em;
+  text-indent: -2em;
+  counter-increment: item;
+}
+
+ol > li::marker {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) " - ";
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  color: rgb(42, 42, 146);
+  /* font-family: "Josefin Sans", sans-serif; */
+  font-family: "Josefin Sans", sans-serif;
+}
+#header > p {
+  margin: 5px;
+}
+
+#container {
+  margin-top: 10px;
+  display: inline-flex;
+}
+
+#gamePage {
+  background-image: url("./assets/igozu.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+#moveDisplay {
+  font-size: 11pt;
+  margin-left: 10px;
+  text-align: left;
+}
+
+#gameInfo {
+  font-size: 11px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.footer {
+  font-style: italic;
+  font-size: 10pt;
+  align-self: center;
+  text-align: center;
+}
+
+.header-footer > p {
+  margin: 10px;
+  font-style: italic;
+  text-align: center;
+}
+
+.header-footer.contact {
+  font-weight: 700;
+}
+
+.inputBox {
+  background-color: rgb(16, 104, 145);
+  color: aliceblue;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10%;
+  padding-left: 20px;
+}
+
+svg {
+  background-color: rgba(255, 255, 255, 0.493);
+}
+
+#footer {
+  text-align: center;
+  font-style: italic;
+  font-size: 10pt;
+}
+#footer > p {
+  margin: 5px;
+}

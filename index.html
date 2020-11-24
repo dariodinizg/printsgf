@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    
+    <title>Print Go Kifu</title>
+  </head>
+  <body onload="main()">
+    <div id="header">
+        <p><span>Developed using <a href="gokifu.com">gokifu.com</a> .sgf files. Visit them! They have a hundred of game records</span></p>
+        <p>After insert your file, print using the browser option in A4 paper. Refresh the page for a new file (Ctrl + P in Chrome).<p>
+        <p><strong style="color:rgb(236, 133, 15)">Warning:</strong>Only works for 19x19 matches</p>
+        <div class="header inputBox">
+          <p><label for="myfile">Select your .sgf file:</label>
+          <input type="file" id="myfile" name="myfile"></p>
+        </div>
+        <div class="header-footer">
+          <p>PS: Sorry for the code. I did as fast as I could not worrying too much about sharing.</p>
+          <p>If notice some bugs, please report to <strong>dariodg@gmail.com</strong></p>
+          <span class="footer contact"><p>For fans! By <strong>Dario Diniz </strong>|
+            <a href="https://github.com/dariodinizg"> GitHub Profile</a> </p>
+          </span> 
+        </div>
+    </div>
+    <div id="gameInfo">
+    </div>
+    <hr>
+      <div id="gamePage">
+        <div id="container">
+          <div id="board1">
+            <svg id="dt" width="131.94mm" height="132.93mm" version="1.1" viewBox="0 0 131.94 132.93" xmlns="http://www.w3.org/2000/svg">
+              <g id="aa" transform="matrix(.2796 0 0 .2796 -115.65 45.902)">
+                <rect id="el" x="432.04" y="-142.23" width="453.25" height="453.25" ry=".54673" fill="#fff" stroke="#030300" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5" style="paint-order:normal"/>
+              </g>
+              <g id="x" transform="matrix(.2796 0 0 .2796 -115.65 45.902)">
+                <rect id="cc" transform="rotate(-90)" x="-295.03" y="448.03" width="421.26" height="421.26" ry="3.0775" fill="#fff" stroke="#030300" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="paint-order:normal"/>
+              </g>
+              <g id="z" transform="matrix(.2796 0 0 .2796 -115.65 45.902)" fill="none" stroke="#000">
+                <path id="dm" d="m447.75 294.4h421.82"/>
+                <path id="f" d="m447.75 83.936h421.82"/>
+                <path id="i" d="m447.75 130.36h421.82"/>
+                <path id="ah" d="m447.75 153.58h421.82"/>
+                <path id="c" d="m447.75 176.79h421.82"/>
+                <path id="ag" d="m447.75 200h421.82"/>
+                <path id="ac" d="m447.75 223.22h421.82"/>
+                <path id="ck" d="m447.75 246.43h421.82"/>
+                <path id="ev" d="m447.75 269.64h421.82"/>
+                <path id="df" d="m447.75 107.15h421.82"/>
+                <path id="ed" d="m447.75-101.77h421.82"/>
+                <path id="dy" d="m447.75-78.56h421.82"/>
+                <path id="er" d="m447.75-55.346h421.82"/>
+                <path id="et" d="m447.75-32.133h421.82"/>
+                <path id="do" d="m447.75-8.9189h421.82"/>
+                <path id="eu" d="m447.75 14.295h421.82"/>
+                <path id="es" d="m447.75 37.508h421.82"/>
+                <path id="eo" d="m447.75 60.722h421.82"/>
+                <path id="ar" d="m447.75-127.2h421.82"/>
+              </g>
+              <g id="w" transform="matrix(.2796 0 0 .2796 -115.65 45.902)" fill="none" stroke="#000">
+                <path id="b" d="m447.67-126.52v421.82"/>
+                <path id="ep" d="m658.66-126.52v421.82"/>
+                <path id="dj" d="m612.24-126.52v421.82"/>
+                <path id="di" d="m589.02-126.52v421.82"/>
+                <path id="dh" d="m565.81-126.52v421.82"/>
+                <path id="dg" d="m542.6-126.52v421.82"/>
+                <path id="ea" d="m519.38-126.52v421.82"/>
+                <path id="bz" d="m496.17-126.52v421.82"/>
+                <path id="dk" d="m472.95-126.52v421.82"/>
+                <path id="by" d="m635.45-126.52v421.82"/>
+                <path id="an" d="m844.37-126.52v421.82"/>
+                <path id="bd" d="m821.16-126.52v421.82"/>
+                <path id="dl" d="m797.95-126.52v421.82"/>
+                <path id="ci" d="m774.73-126.52v421.82"/>
+                <path id="cj" d="m751.52-126.52v421.82"/>
+                <path id="dn" d="m728.3-126.52v421.82"/>
+                <path id="ak" d="m705.09-126.52v421.82"/>
+                <path id="al" d="m681.88-126.52v421.82"/>
+                <path id="bf" d="m869.8-126.52v421.82"/>
+              </g>
+              <g id="x_header" transform="matrix(.2796 0 0 .2796 -115.65 45.902)" font-family="Chilanka" font-size="15.875px" font-style="italic" font-weight="bold" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5">
+                <text id="hxa" x="444.3765" y="-151.46162" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="dr" x="444.3765" y="-151.46162" fill="#000000" font-size="15.875px" stroke-width=".5">A</tspan></text>
+                <text id="hxb" x="467.91013" y="-151.47713" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="ds" x="467.91013" y="-151.47713" stroke-width=".5">B</tspan></text>
+                <text id="hxc" x="489.45651" y="-151.44612" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="g" x="489.45651" y="-151.44612" stroke-width=".5">C</tspan></text>
+                <text id="hxd" x="514.48816" y="-151.37636" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="h" x="514.48816" y="-151.37636" stroke-width=".5">D</tspan></text>
+                <text id="hxe" x="536.51685" y="-151.38669" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="dv" x="536.51685" y="-151.38669" stroke-width=".5">E</tspan></text>
+                <text id="hxf" x="559.76672" y="-151.62056" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="bh" x="559.76672" y="-151.62056" stroke-width=".5">F</tspan></text>
+                <text id="hxg" transform="rotate(-15)" x="601.32269" y="6.3440371" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="bm" x="601.32269" y="6.3440371" stroke-width=".5">G</tspan></text>
+                <text id="hxh" x="606.84222" y="-151.48489" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="cn" x="606.84222" y="-151.48489" stroke-width=".5">H</tspan></text>
+                <text id="hxi" x="633.01666" y="-151.39961" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="cq" x="633.01666" y="-151.39961" stroke-width=".5">I</tspan></text>
+                <text id="hxj" x="653.89636" y="-151.4655" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="db" x="653.89636" y="-151.4655" stroke-width=".5">J</tspan></text>
+                <text id="hxk" x="676.45264" y="-151.45" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="da" x="676.45264" y="-151.45" stroke-width=".5">K</tspan></text>
+                <text id="hxl" x="699.86603" y="-151.38409" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="dc" x="699.86603" y="-151.38409" stroke-width=".5">L</tspan></text>
+                <text id="hxm" x="721.37537" y="-151.51201" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="en" x="721.37537" y="-151.51201" stroke-width=".5">M</tspan></text>
+                <text id="hxn" x="745.5304" y="-151.42676" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="em" x="745.5304" y="-151.42676" stroke-width=".5">N</tspan></text>
+                <text id="hxo" x="767.06818" y="-151.44176" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="ae" x="767.06818" y="-151.44176" stroke-width=".5">O</tspan></text>
+                <text id="hxp" x="793.30872" y="-151.5508" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="ad" x="793.30872" y="-151.5508" stroke-width=".5">P</tspan></text>
+                <text id="hxq" x="813.60345" y="-151.26785" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="af" x="813.60345" y="-151.26785" stroke-width=".5">Q</tspan></text>
+                <text id="hxr" x="838.69135" y="-151.41515" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="dw" x="838.69135" y="-151.41515" stroke-width=".5">R</tspan></text>
+                <text id="hxs" x="861.20667" y="-151.46552" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="du" x="861.20667" y="-151.46552" stroke-width=".5">S</tspan></text>
+              </g>
+              <g id="y_header" transform="matrix(.2796 0 0 .2796 -115.65 45.902)" font-family="Chilanka" font-size="15.875px" font-style="italic" font-weight="bold" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5">
+                <text id="hy1" x="417.5188" y="299.70685" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="cf" x="417.5188" y="299.70685" stroke-width=".5">1</tspan></text>
+                <text id="hy2" x="415.13974" y="274.88101" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="cg" x="415.13974" y="274.88101" stroke-width=".5">2</tspan></text>
+                <text id="hy3" x="415.36823" y="251.7139" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="ch" x="415.36823" y="251.7139" stroke-width=".5">3</tspan></text>
+                <text id="hy4" x="413.81723" y="228.5584" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="aq" x="413.81723" y="228.5584" stroke-width=".5">4</tspan></text>
+                <text id="hy5" x="414.25055" y="205.53078" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="ap" x="414.25055" y="205.53078" stroke-width=".5">5</tspan></text>
+                <text id="hy6" x="415.38596" y="182.08455" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="bs" x="415.38596" y="182.08455" stroke-width=".5">6</tspan></text>
+                <text id="hy7" x="414.13544" y="159.14609" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="bq" x="414.13544" y="159.14609" stroke-width=".5">7</tspan></text>
+                <text id="hy8" x="414.93564" y="135.448" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="bo" x="414.93564" y="135.448" stroke-width=".5">8</tspan></text>
+                <text id="hy9" x="414.64001" y="112.37769" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="t" x="414.64001" y="112.37769" stroke-width=".5">9</tspan></text>
+                <text id="hy10" x="413.38519" y="89.245453" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="bt" x="413.38519" y="89.245453" stroke-width=".5">10</tspan></text>
+                <text id="hy11" x="415.67392" y="66.031845" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="dd" x="415.67392" y="66.031845" stroke-width=".5">11</tspan></text>
+                <text id="hy12" x="413.06494" y="42.744568" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="de" x="413.06494" y="42.744568" stroke-width=".5">12</tspan></text>
+                <text id="hy13" x="413.30515" y="19.577385" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="eb" x="413.30515" y="19.577385" stroke-width=".5">13</tspan></text>
+                <text id="hy14" x="412.04416" y="-3.6091845" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="ec" x="412.04416" y="-3.6091845" stroke-width=".5">14</tspan></text>
+                <text id="hy15" x="412.21307" y="-26.621286" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="dz" x="412.21307" y="-26.621286" stroke-width=".5">15</tspan></text>
+                <text id="hy16" x="413.46164" y="-50.036453" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="ai" x="413.46164" y="-50.036453" stroke-width=".5">16</tspan></text>
+                <text id="hy17" x="412.8248" y="-73.033112" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="aj" x="412.8248" y="-73.033112" stroke-width=".5">17</tspan></text>
+                <text id="hy18" x="413.15796" y="-96.494736" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="cd" x="413.15796" y="-96.494736" stroke-width=".5">18</tspan></text>
+                <text id="hy19" x="413.07504" y="-121.96815" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;paint-order:normal" xml:space="preserve"><tspan id="ce" x="413.07504" y="-121.96815" stroke-width=".5">19</tspan></text>
+              </g>
+              <g id="v" transform="matrix(.2796 0 0 .2796 -115.65 45.902)" stroke="#030300" stroke-linecap="round" stroke-linejoin="round" stroke-width=".27656">
+                <circle id="ej" cx="519.28" cy="-55.536" r="2.927" style="paint-order:normal"/>
+                <circle id="ca" cx="658.66" cy="223.22" r="2.927" style="paint-order:normal"/>
+                <circle id="cm" cx="519.38" cy="83.936" r="2.927" style="paint-order:normal"/>
+                <circle id="cb" cx="658.66" cy="-55.346" r="2.927" style="paint-order:normal"/>
+                <circle id="cl" cx="797.95" cy="83.936" r="2.927" style="paint-order:normal"/>
+                <circle id="co" cx="658.66" cy="83.936" r="2.927" style="paint-order:normal"/>
+                <circle id="eq" cx="519.38" cy="223.22" r="2.927" style="paint-order:normal"/>
+                <circle id="cp" cx="797.95" cy="223.22" r="2.927" style="paint-order:normal"/>
+                <circle id="cx" cx="797.95" cy="-55.346" r="2.927" style="paint-order:normal"/>
+              </g>
+              <circle class="playPoints" id="1a" cx="10.098" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="1b" cx="16.588" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="1c" cx="23.08" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="1d" cx="29.569" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="1e" cx="36.062" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="1f" cx="42.551" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="1g" cx="49.041" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="1h" cx="55.534" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="1i" cx="62.023" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="1j" cx="68.513" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="1l" cx="81.495" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="1k" cx="75.005" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="1m" cx="87.984" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="1n" cx="94.475" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="1o" cx="100.97" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="1p" cx="107.46" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="1q" cx="113.95" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="1r" cx="120.43" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="1s" cx="126.93" cy="127.92" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2a" cx="10.094" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2b" cx="16.583" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2c" cx="23.076" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2d" cx="29.565" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2e" cx="36.057" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2f" cx="42.547" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2g" cx="49.036" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2h" cx="55.529" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2i" cx="62.018" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2j" cx="68.508" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2k" cx="75" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2l" cx="81.49" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2m" cx="87.979" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2n" cx="94.472" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2o" cx="100.96" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2p" cx="107.45" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2q" cx="113.94" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2r" cx="120.43" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="2s" cx="126.92" cy="121.29" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3a" cx="10.093" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3b" cx="16.582" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3c" cx="23.075" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3d" cx="29.564" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3e" cx="36.057" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3f" cx="42.546" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3g" cx="49.035" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3h" cx="55.528" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3i" cx="62.017" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3j" cx="68.507" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3k" cx="74.999" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3l" cx="81.489" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3m" cx="87.978" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3n" cx="94.471" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3o" cx="100.96" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3p" cx="107.45" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3q" cx="113.94" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3r" cx="120.43" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="3s" cx="126.92" cy="114.8" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4a" cx="10.097" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4b" cx="16.586" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4c" cx="23.079" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4d" cx="29.568" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4e" cx="36.06" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4f" cx="42.549" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4g" cx="49.039" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4h" cx="55.532" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4i" cx="62.021" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4j" cx="68.51" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4k" cx="75.003" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4l" cx="81.493" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4m" cx="87.982" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4n" cx="94.475" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4o" cx="100.96" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4p" cx="107.46" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4q" cx="113.95" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4r" cx="120.44" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="4s" cx="126.93" cy="108.31" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5a" cx="10.097" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5b" cx="16.586" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5c" cx="23.079" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5d" cx="29.568" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5e" cx="36.06" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5f" cx="42.549" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5g" cx="49.039" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5h" cx="55.532" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5i" cx="62.021" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5j" cx="68.51" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5k" cx="75.003" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5l" cx="81.493" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5m" cx="87.982" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5n" cx="94.475" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5o" cx="100.96" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5p" cx="107.46" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5q" cx="113.95" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5r" cx="120.44" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="5s" cx="126.93" cy="101.82" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6a" cx="10.093" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6b" cx="16.582" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6c" cx="23.075" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6d" cx="29.564" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6e" cx="36.057" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6f" cx="42.546" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6g" cx="49.035" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6h" cx="55.528" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6i" cx="62.017" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6j" cx="68.507" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6k" cx="74.999" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6l" cx="81.489" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6m" cx="87.978" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6n" cx="94.471" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6o" cx="100.96" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6p" cx="107.45" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6q" cx="113.94" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6r" cx="120.43" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="6s" cx="126.92" cy="95.332" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7a" cx="10.097" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7b" cx="16.586" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7c" cx="23.079" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7d" cx="29.568" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7e" cx="36.06" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7f" cx="42.549" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7g" cx="49.039" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7h" cx="55.532" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7i" cx="62.021" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7j" cx="68.51" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7l" cx="81.493" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7m" cx="87.982" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7n" cx="94.475" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7o" cx="100.96" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7p" cx="107.46" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7q" cx="113.95" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7r" cx="120.44" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7s" cx="126.93" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="7k" cx="75.003" cy="88.843" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8a" cx="10.097" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8b" cx="16.586" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8c" cx="23.079" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8d" cx="29.568" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8e" cx="36.06" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8f" cx="42.549" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8g" cx="49.039" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8h" cx="55.532" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8i" cx="62.021" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8j" cx="68.51" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8l" cx="81.493" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8m" cx="87.982" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8n" cx="94.475" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8o" cx="100.96" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8p" cx="107.46" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8q" cx="113.95" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8r" cx="120.44" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8s" cx="126.93" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="8k" cx="75.003" cy="82.351" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9a" cx="10.097" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9b" cx="16.586" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9c" cx="23.079" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9d" cx="29.568" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9e" cx="36.06" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9f" cx="42.549" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9g" cx="49.039" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9h" cx="55.532" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9i" cx="62.021" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9j" cx="68.51" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9l" cx="81.493" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9m" cx="87.982" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9n" cx="94.475" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9o" cx="100.96" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9p" cx="107.46" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9q" cx="113.95" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9r" cx="120.44" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9s" cx="126.93" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="9k" cx="75.003" cy="75.861" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="bu" cx="10.093" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="10b" cx="16.582" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="10c" cx="23.075" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="10d" cx="29.564" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="10e" cx="36.057" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="10f" cx="42.546" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="10g" cx="49.035" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="10h" cx="55.528" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="10i" cx="62.017" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="10j" cx="68.507" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="10l" cx="81.489" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="10m" cx="87.978" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="10n" cx="94.471" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="10o" cx="100.96" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="10p" cx="107.45" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="10q" cx="113.94" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="10r" cx="120.43" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="10s" cx="126.92" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="10k" cx="74.999" cy="69.37" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11a" cx="10.097" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11b" cx="16.586" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11c" cx="23.079" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11d" cx="29.568" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11e" cx="36.06" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11f" cx="42.549" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11g" cx="49.039" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11h" cx="55.532" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11i" cx="62.021" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11j" cx="68.51" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11l" cx="81.493" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11m" cx="87.982" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11n" cx="94.475" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11o" cx="100.96" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11p" cx="107.46" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11q" cx="113.95" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11r" cx="120.44" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11s" cx="126.93" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="11k" cx="75.003" cy="62.88" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12a" cx="10.093" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12b" cx="16.582" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12c" cx="23.075" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12d" cx="29.564" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12e" cx="36.057" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12f" cx="42.546" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12g" cx="49.035" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12h" cx="55.528" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12i" cx="62.017" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12j" cx="68.507" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12l" cx="81.489" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12m" cx="87.978" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12n" cx="94.471" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12o" cx="100.96" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12p" cx="107.45" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12q" cx="113.94" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12r" cx="120.43" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12s" cx="126.92" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="12k" cx="74.999" cy="56.389" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13a" cx="10.093" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13b" cx="16.582" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13c" cx="23.075" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13d" cx="29.564" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13e" cx="36.057" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13f" cx="42.546" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13g" cx="49.035" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13h" cx="55.528" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13i" cx="62.017" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13j" cx="68.507" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13l" cx="81.489" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13m" cx="87.978" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13n" cx="94.471" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13o" cx="100.96" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13p" cx="107.45" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13q" cx="113.94" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13r" cx="120.43" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13s" cx="126.92" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="13k" cx="74.994" cy="49.899" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14a" cx="10.097" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14b" cx="16.586" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14c" cx="23.079" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14d" cx="29.568" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14e" cx="36.06" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14f" cx="42.549" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14g" cx="49.039" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14h" cx="55.532" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14i" cx="62.021" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14j" cx="68.51" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14l" cx="81.493" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14m" cx="87.982" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14n" cx="94.475" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14o" cx="100.96" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14p" cx="107.46" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14q" cx="113.95" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14r" cx="120.44" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14s" cx="126.93" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="14k" cx="74.998" cy="43.408" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15a" cx="10.097" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15b" cx="16.586" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15c" cx="23.079" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15d" cx="29.568" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15e" cx="36.06" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15f" cx="42.549" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15g" cx="49.039" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15h" cx="55.532" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15i" cx="62.021" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15j" cx="68.51" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15l" cx="81.493" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15m" cx="87.982" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15n" cx="94.475" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15o" cx="100.96" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15p" cx="107.46" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15q" cx="113.95" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15r" cx="120.44" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15s" cx="126.93" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="15k" cx="74.998" cy="36.917" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16a" cx="10.093" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16b" cx="16.582" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16c" cx="23.075" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16d" cx="29.564" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16e" cx="36.057" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16f" cx="42.546" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16g" cx="49.035" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16h" cx="55.528" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16i" cx="62.017" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16j" cx="68.507" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16l" cx="81.489" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16m" cx="87.978" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16n" cx="94.471" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16o" cx="100.96" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16p" cx="107.45" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16q" cx="113.94" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16r" cx="120.43" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16s" cx="126.92" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="16k" cx="74.994" cy="30.427" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17a" cx="10.097" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17b" cx="16.586" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17c" cx="23.079" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17d" cx="29.568" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17e" cx="36.06" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17f" cx="42.549" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17g" cx="49.039" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17h" cx="55.532" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17i" cx="62.021" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17j" cx="68.51" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17l" cx="81.493" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17m" cx="87.982" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17n" cx="94.475" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17o" cx="100.96" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17p" cx="107.46" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17q" cx="113.95" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17r" cx="120.44" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17s" cx="126.93" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="17k" cx="74.998" cy="23.936" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18a" cx="10.095" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18b" cx="16.584" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18c" cx="23.077" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18d" cx="29.566" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18e" cx="36.059" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18f" cx="42.548" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18g" cx="49.037" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18h" cx="55.53" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18i" cx="62.019" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18j" cx="68.509" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18k" cx="74.996" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18l" cx="81.491" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18m" cx="87.98" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18n" cx="94.473" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18o" cx="100.96" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18p" cx="107.45" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18q" cx="113.94" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18r" cx="120.43" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="18s" cx="126.93" cy="17.447" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19a" cx="10.098" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19b" cx="16.588" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19c" cx="23.08" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19d" cx="29.569" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19e" cx="36.062" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19f" cx="42.551" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19g" cx="49.041" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19h" cx="55.533" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19i" cx="62.023" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19j" cx="68.512" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19k" cx="74.999" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19l" cx="81.495" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19m" cx="87.984" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19n" cx="94.477" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19o" cx="100.97" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19p" cx="107.46" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19q" cx="113.95" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19r" cx="120.44" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+              <circle class="playPoints" id="19s" cx="126.93" cy="10.331" r="3.0074" fill="none" stroke="#000" stroke-width=".023955" style="paint-order:normal"/>
+            </svg>
+          </div>
+          <div id="moveDisplay">
+
+          </div>
+        </div>
+        <!-- <div id="notes">
+        </div> -->
+      </div>
+      <div id="footer">
+        <p><strong>Painting:</strong> A Game of Go, from the Four Accomplishments - Kano school</p>
+        <a target="blank" href="https://global.canon/en/tsuzuri/works/02.html">Learn more here</a>
+      </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
