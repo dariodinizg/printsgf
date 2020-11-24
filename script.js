@@ -117,7 +117,7 @@ function displayMoveHistory(moveHistory){
     })
     // console.log(parseInt(moveHistory.length / colNumberOfItems) + 1)
     list.style.columnCount = `${parseInt(moveHistory.length / colNumberOfItems) + 1}`
-    list.style.columnWidth = "65px"
+    list.style.columnWidth = "55px"
     moveDisplay.appendChild(list)
 }
 
