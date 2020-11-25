@@ -27,6 +27,7 @@ ol > li::marker {
 
 #header {
   display: flex;
+  font-size: 15pt;
   flex-direction: column;
   align-self: center;
   align-items: center;
@@ -98,7 +99,7 @@ svg {
 #footer {
   text-align: center;
   font-style: italic;
-  font-size: 12pt;
+  font-size: 15pt;
 }
 #footer > p {
   margin: 5px;
